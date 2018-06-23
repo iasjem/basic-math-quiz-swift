@@ -61,5 +61,20 @@ func isCorrectAnswer(answer: Int) -> Bool {
    }
    return false
 }
+// MARK - Alert Dialogs
+
+func showQuestion() {
+     print("\(firstNumber) \(operation.symbol()) \(secondNumber)")
+}
+
+func showResult()  {
+    print( "The correct answer is \(result)")
+    let message = isCorrectAnswer(answer: answer) ? "You got it right!" : "You got it wrong..."
+    print(message)
+}
+
+func showAnswer() {
+    print("Your answer is \(answer)")
+}
 // MARK - Initial set-up environment
 print("Test")
