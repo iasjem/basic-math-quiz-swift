@@ -36,5 +36,24 @@ enum Operation {
     }
 }
 
+var firstNumber: Int {
+    return 20
+}
+
+var secondNumber: Int {
+    return 2
+}
+
+var operation: Operation {
+    return Operation.Divide
+}
+
+var result: Int {
+    return operation.calculate(firstNumber: firstNumber , secondNumber: secondNumber)
+}
+
+var answer: Int {
+    return 10
+}
 // MARK - Initial set-up environment
 print("Test")
