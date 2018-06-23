@@ -1,8 +1,7 @@
 import Foundation 
 
-// MARK - Enums
+// MARK - Enumerations
 
-// MARK - Functions
 enum Operation {
     case Add
     case Subtract
@@ -36,6 +35,8 @@ enum Operation {
     }
 }
 
+// MARK - Properties
+
 var firstNumber: Int {
     return 20
 }
@@ -55,12 +56,16 @@ var result: Int {
 var answer: Int {
     return 10
 }
+
+// MARK - Helpers
+
 func isCorrectAnswer(answer: Int) -> Bool {
    if result == answer {
         return true
    }
    return false
 }
+
 // MARK - Alert Dialogs
 
 func showQuestion() {
@@ -76,5 +81,11 @@ func showResult()  {
 func showAnswer() {
     print("Your answer is \(answer)")
 }
+
 // MARK - Initial set-up environment
-print("Test")
+
+// print("Test")
+
+showQuestion()
+showAnswer()
+showResult()
