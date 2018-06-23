@@ -55,5 +55,11 @@ var result: Int {
 var answer: Int {
     return 10
 }
+func isCorrectAnswer(answer: Int) -> Bool {
+   if result == answer {
+        return true
+   }
+   return false
+}
 // MARK - Initial set-up environment
 print("Test")
